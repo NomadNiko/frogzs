@@ -10,12 +10,8 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const navlinks = [
         {
-            href: "#creations",
-            text: "Creations",
-        },
-        {
             href: "#about",
-            text: "About",
+            text: "Features",
         },
         {
             href: "#testimonials",
@@ -48,10 +44,7 @@ export default function Navbar() {
 
                 <div className="hidden lg:block space-x-3">
                     <button className="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md active:scale-95">
-                        Get started
-                    </button>
-                    <button className="hover:bg-slate-300/20 transition px-6 py-2 border border-slate-400 rounded-md active:scale-95">
-                        Login
+                        Download App
                     </button>
                 </div>
                 <button onClick={() => setIsMenuOpen(true)} className="lg:hidden active:scale-90 transition">
